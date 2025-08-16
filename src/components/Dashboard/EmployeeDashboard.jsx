@@ -10,7 +10,7 @@ const EmployeeDashboard = ({data}) => {
    <div className='p-10 bg-[#1C1C1C] h-screen'>
     <Header data={data}/>
     <TaskListNumbers data={data}/>
-    <TaskList data={data} />
+    <TaskList data={data}/>
    </div>
    </>
   )
