@@ -2,13 +2,12 @@ import React from 'react'
 import { setLocalStorage } from '../../utils/localStorage'
 
 const Header = ({data}) => { 
-//   const [username, setUsername] = useState('')
-
-//   if(!data){
-//     setUsername('Admin')
-//   }else{
-//     setUsername{data.firstName}
-//   }
+  // const [username, setUsername] = useState('')
+  // if(!data){
+  //   setUsername('Admin')
+  // }else{
+  //   setUsername{data.firstName}
+  // }
 
 const logOutUser = ()=>{
   localStorage.setItem('loggedInUser','')
