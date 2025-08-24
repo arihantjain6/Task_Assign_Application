@@ -14,7 +14,7 @@ const employees = [
         active: true,
         newTask: false,
         completed: false,
-        failed: false
+        failed: false,
       },
       {
         title: "Client follow-up call",
@@ -24,7 +24,7 @@ const employees = [
         active: false,
         newTask: true,
         completed: false,
-        failed: false
+        failed: false,
       },
       {
         title: "Team meeting",
@@ -34,9 +34,9 @@ const employees = [
         active: false,
         newTask: false,
         completed: true,
-        failed: false
-      }
-    ]
+        failed: false,
+      },
+    ],
   },
   {
     id: 2,
@@ -53,7 +53,7 @@ const employees = [
         active: true,
         newTask: false,
         completed: false,
-        failed: false
+        failed: false,
       },
       {
         title: "Vendor contract review",
@@ -63,7 +63,7 @@ const employees = [
         active: false,
         newTask: true,
         completed: false,
-        failed: false
+        failed: false,
       },
       {
         title: "Data backup",
@@ -73,7 +73,7 @@ const employees = [
         active: false,
         newTask: false,
         completed: false,
-        failed: true
+        failed: true,
       },
       {
         title: "Website content update",
@@ -83,9 +83,9 @@ const employees = [
         active: false,
         newTask: false,
         completed: true,
-        failed: false
-      }
-    ]
+        failed: false,
+      },
+    ],
   },
   {
     id: 3,
@@ -102,7 +102,7 @@ const employees = [
         active: true,
         newTask: false,
         completed: false,
-        failed: false
+        failed: false,
       },
       {
         title: "Team training session",
@@ -112,7 +112,7 @@ const employees = [
         active: false,
         newTask: true,
         completed: false,
-        failed: false
+        failed: false,
       },
       {
         title: "Internal audit",
@@ -122,9 +122,9 @@ const employees = [
         active: false,
         newTask: false,
         completed: false,
-        failed: true
-      }
-    ]
+        failed: true,
+      },
+    ],
   },
   {
     id: 4,
@@ -141,7 +141,7 @@ const employees = [
         active: true,
         newTask: false,
         completed: false,
-        failed: false
+        failed: false,
       },
       {
         title: "Bug fix deployment",
@@ -151,7 +151,7 @@ const employees = [
         active: false,
         newTask: true,
         completed: false,
-        failed: false
+        failed: false,
       },
       {
         title: "Code review",
@@ -161,7 +161,7 @@ const employees = [
         active: false,
         newTask: false,
         completed: true,
-        failed: false
+        failed: false,
       },
       {
         title: "API documentation update",
@@ -171,9 +171,9 @@ const employees = [
         active: false,
         newTask: false,
         completed: false,
-        failed: true
-      }
-    ]
+        failed: true,
+      },
+    ],
   },
   {
     id: 5,
@@ -190,7 +190,7 @@ const employees = [
         active: true,
         newTask: false,
         completed: false,
-        failed: false
+        failed: false,
       },
       {
         title: "Customer feedback survey",
@@ -200,7 +200,7 @@ const employees = [
         active: false,
         newTask: true,
         completed: false,
-        failed: false
+        failed: false,
       },
       {
         title: "Market research",
@@ -210,7 +210,7 @@ const employees = [
         active: false,
         newTask: false,
         completed: true,
-        failed: false
+        failed: false,
       },
       {
         title: "Event planning",
@@ -220,28 +220,27 @@ const employees = [
         active: false,
         newTask: false,
         completed: false,
-        failed: true
-      }
-    ]
-  }
+        failed: true,
+      },
+    ],
+  },
 ];
-
 
 const admin = [
   {
     id: 1,
     email: "admin@example.com",
-    password: "123"
-  }
+    password: "123",
+  },
 ];
 
-export const setLocalStorage=()=>{
-    localStorage.setItem('employees',JSON.stringify(employees))
-    localStorage.setItem('admin',JSON.stringify(admin))
-}
+export const setLocalStorage = () => {
+  localStorage.setItem("employees", JSON.stringify(employees));
+  localStorage.setItem("admin", JSON.stringify(admin));
+};
 
-export const getLocalStorage=()=>{
-    const employees=JSON.parse(localStorage.getItem('employees'))
-    const admin=JSON.parse(localStorage.getItem('admin'))
-    return {employees,admin}
-}
+export const getLocalStorage = () => {
+  const employees = JSON.parse(localStorage.getItem("employees"));
+  const admin = JSON.parse(localStorage.getItem("admin"));
+  return { employees, admin };
+};
